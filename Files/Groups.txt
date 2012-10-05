@@ -1,0 +1,20 @@
+014|Aceros y fierros
+042|Bolsas para envase de cemento
+207|Despacho
+210|Electrico
+211|Electronico
+031|Explosivos
+220|Ferreteria
+013|Herramientas
+030|Material del laboratorio
+034|Material nuevas oficinas
+017|Materiales de construccion
+295|Merchandising
+221|Miscelaneos
+050|Molinos
+008|Rodamientos
+056|Seguridad, equipo y accesorios
+208|Servicios auxiliares
+016|Tuberias y accesorios
+019|Utiles de escritorio
+060|Varios

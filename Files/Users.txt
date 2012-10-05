@@ -1,0 +1,6 @@
+admin|root|System Administrator|1|1|1|1|
+entryGuy|password|Entry Guy|0|1|0|1|
+exitGuy|1234|Exit Guy|0|0|1|1|
+disabled|1234|New Name|0|0|1|1|
+newUser|jashd|jhsad|1|1|1|1|
+nonAdmin|xyz|Non Admin|0|1|1|1|

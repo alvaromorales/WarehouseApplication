@@ -1,0 +1,69 @@
+public IndexTNode getParent(IndexTNode node){
+	
+	if (getRoot() == null){
+		return null;
+	} else if (node.equals(getRoot()){
+		return null;
+	}
+	
+	boolean found = false;
+	
+	BinaryTNode tempParent = null;
+	BinaryTNode temp = getRoot();
+	
+	while(!done){
+		if(newName.compareTo(temp.name)<0
+				
+	}
+	
+	
+}
+
+
+/**
+ * Searches the binary tree for an Item by either code or name, by recursively calling the method search(IndexTNode current, String field, ArrayList list)
+ * @param field - the name of the item to be found
+ * @return an ArrayList of Items containing the char sequence of name
+ */
+
+public ArrayList search(String field){
+	return search(root, field, new ArrayList());
+}
+
+/**
+ * Method is called recursively to search for an Item by either code or name
+ * @param current - a pointer to the current node being evaluated for search
+ * @param field - the full or partial match to find
+ * @param list - the ArrayList that stores matches
+ * @return an ArrayList of Items containing the char sequence of field
+ */
+public ArrayList search(IndexTNode current, String field, ArrayList list){
+	if (current == null){
+		if(list.isEmpty()){
+			return null;
+		} else {
+			return list;
+		}
+	} else {
+		while (current.getIndex().getField().startsWith(field)){
+			if(current.getIndex().getField().compareTo(field) < 0){
+				list.add(current.getIndex());	//RETURN ITEM NOT INDEX!!!
+				list.trimToSize();
+				return search(current.getLeft(), field, list);
+			} else if (current.getIndex().getField().compareTo(field) > 0){
+				list.add(current.getIndex());	//RETURN ITEM NOT INDEX!!!
+				list.trimToSize();
+				return search(current.getRight(), field, list);
+			} else if (current.getIndex().getField().compareTo(field) == 0){
+				//If they are equal, it is not a partial search, so stop looking further
+				list.add(current.getIndex());	//RETURN ITEM NOT INDEX!!!
+				list.trimToSize();
+				return list;
+			}
+		}
+	}
+
+	list.trimToSize();
+	return list;
+}
+*/
